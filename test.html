@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>QR Code Decoder</title>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.0.0/dist/jsQR.js"></script>
+  <script src="steps/old/processflowOld.js"></script>
+</head>
+<body>
+
+
+
+<input type="file" id="qr-image-input" accept="image/*">
+<button id="decode-button">Decode QR Code</button>
+<div id="result"></div>
+
+
+</body>
+
+
+<script>
+  document.getElementById("decode-button").addEventListener("click", decodeQRCode);
+</script>
+
+
+</html>
